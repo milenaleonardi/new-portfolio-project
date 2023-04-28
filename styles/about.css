@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: url("/assets/fundo-vetor.jpg");
+  background-size: cover;
+}
+
+.header {
+  padding: 2% 0 0 27.5%;
+}
+
+.header__menu {
+  display: flex;
+  align-items: self-end;
+  gap: 80px;
+}
+
+.header__menu__links {
+  font-size: 1rem;
+  font-family: "Krona One", sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+
+.header__menu__links:hover {
+  text-shadow: rgba(0, 0, 0, 0.949) 0.1em 0.1em 0.3em;
+}
+
+.header__menu__links:active {
+  color: lightblue;
+}
+
+.image-coffee {
+  width: 3%;
+}
+
+.main {
+  display: flex;
+  margin: 100px 200px;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px grey;
+  border-radius: 12px;
+}
+
+.main__text__title {
+  font-family: "Krona One", sans-serif;
+  font-size: 30px;
+}
+
+.main__text__paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.main__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 100px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  padding: 3% 3% 3% 0;
+}
+
+#first-image {
+  border-radius: 50%;
+  width: 300px;
+  position: relative;
+  box-shadow: 5px 5px 15px rgb(224, 177, 185);
+}
+
+#second-image {
+  border-radius: 50%;
+  width: 65%;
+  position: relative;
+  top: -70px;
+  right: 70px;
+  box-shadow: 5px 5px 20px rgb(167, 211, 226);
+}
+
+.footer {
+  padding: 30px;
+  margin: 3% 0 0 0;
+}
+
+.footer__images__logo {
+  width: 2%;
+}
+
+h3 {
+  display: flex;
+  justify-content: end;
+  font-size: 18px;
+  font-weight: 200;
+}

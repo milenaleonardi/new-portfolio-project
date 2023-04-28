@@ -29,7 +29,7 @@ body {
 }
 
 .header__menu__links:hover {
-  text-shadow: black 0.1em 0.1em 0.3em;
+  text-shadow: rgba(0, 0, 0, 0.949) 0.1em 0.1em 0.3em;
 }
 
 .header__menu__links:active {
@@ -57,6 +57,7 @@ body {
 .main__text__paragraph {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
+  text-align: justify;
 }
 
 .main__text {
@@ -66,8 +67,12 @@ body {
   padding: 100px;
 }
 
+div {
+}
+
 .main__image {
-  width: 47.5%;
+  padding: 0;
+  width: 45%;
 }
 
 .footer {
