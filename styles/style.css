@@ -87,6 +87,24 @@ h3 {
   font-weight: 200;
 }
 
+@media (max-width: 1740px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 100px 100px 100px;
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .main__image {
+    width: 50%;
+    position: relative;
+  }
+}
+
 @media (max-width: 1555px) {
   .main__image {
     width: 48%;

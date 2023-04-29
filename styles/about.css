@@ -106,20 +106,89 @@ h3 {
   font-weight: 200;
 }
 
-@media (max-width: 1240) {
+@media (max-width: 1400px) {
   .main {
     margin: 50px 100px 50px 100px;
     box-sizing: border-box;
-    position: relative;
   }
+}
 
+@media (max-width: 1200px) {
   .main__text {
-    padding: 80px 100px 80px 80px;
+    padding: 60px 100px 40px 60px;
   }
 
-  #fist-image,
-  #second-image {
+  #first-image {
+    margin: 40px 20px;
     width: auto;
-    position: relative;
+    height: 150px;
+  }
+  #second-image {
+    margin-top: -30px;
+    width: 170px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 950px) {
+  .main__text {
+    padding: 60px 100px 40px 60px;
+  }
+
+  #first-image {
+    margin: 50px 20px;
+    width: auto;
+    height: 140px;
+  }
+  #second-image {
+    margin-top: -30px;
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 890px) {
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .main__text {
+    padding: 0 60px 40px 60px;
+  }
+
+  #first-image {
+    margin: 30px 50px 0 0;
+    width: auto;
+    height: 140px;
+  }
+  #second-image {
+    margin: 10px 50px 0 0;
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 890px) {
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .main__text {
+    padding: 10px 60px 40px 60px;
+  }
+
+  #first-image {
+    margin: 30px 50px 0 0;
+    width: auto;
+    height: 100px;
+  }
+  #second-image {
+    margin: 10px 50px 0 0;
+    width: 100px;
+    height: 70px;
   }
 }
