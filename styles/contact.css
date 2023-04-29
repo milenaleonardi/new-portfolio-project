@@ -43,51 +43,58 @@ body {
 
 .main {
   display: flex;
-  margin: 100px 200px;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-direction: column;
+  margin: 160px 500px;
+  padding: 50px 140px 100px 140px;
+  align-items: center;
+  justify-content: space-evenly;
   box-shadow: 5px 5px 10px grey;
   border-radius: 12px;
+  gap: 90px;
 }
 
-.main__text__title {
+.main__title {
   font-family: "Krona One", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
 }
 
-.main__text__paragraph {
+.main__section {
+  display: flex;
+  flex-direction: row;
+  gap: 220px;
+}
+
+.icons-esquerda,
+.icons-direita {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.telefone,
+.email,
+.localidade,
+.linkedin,
+.github,
+.instagram {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  text-align: justify;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+}
+
+.contact-icon {
+  width: 32px;
 }
 
 .main__text {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding: 100px;
-}
-
-div {
-  display: flex;
-  flex-direction: column;
-  padding: 3% 3% 3% 0;
-}
-
-#first-image {
-  border-radius: 50%;
-  width: 300px;
-  position: relative;
-  box-shadow: 5px 5px 15px rgb(224, 177, 185);
-}
-
-#second-image {
-  border-radius: 50%;
-  width: 65%;
-  position: relative;
-  top: -70px;
-  right: 70px;
-  box-shadow: 5px 5px 20px rgb(167, 211, 226);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .footer {
@@ -104,22 +111,4 @@ h3 {
   justify-content: end;
   font-size: 18px;
   font-weight: 200;
-}
-
-@media (max-width: 1240) {
-  .main {
-    margin: 50px 100px 50px 100px;
-    box-sizing: border-box;
-    position: relative;
-  }
-
-  .main__text {
-    padding: 80px 100px 80px 80px;
-  }
-
-  #fist-image,
-  #second-image {
-    width: auto;
-    position: relative;
-  }
 }

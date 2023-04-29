@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-  padding: 2% 0 0 27.5%;
+  padding: 2% 0 0 30%;
 }
 
 .header__menu {
@@ -42,7 +42,7 @@ body {
 
 .main {
   display: flex;
-  margin: 100px;
+  margin: 100px 200px;
   align-items: flex-start;
   justify-content: space-between;
   box-shadow: 5px 5px 10px grey;
@@ -67,11 +67,7 @@ body {
   padding: 100px;
 }
 
-div {
-}
-
 .main__image {
-  padding: 0;
   width: 45%;
 }
 
@@ -89,4 +85,110 @@ h3 {
   justify-content: end;
   font-size: 18px;
   font-weight: 200;
+}
+
+@media (max-width: 1555px) {
+  .main__image {
+    width: 48%;
+  }
+}
+
+@media (max-width: 1520px) {
+  .main__text {
+    padding: 80px 50px 0 50px;
+  }
+  .main__image {
+    width: 35rem;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 1375px) {
+  .main__text {
+    padding: 80px 50px 0 50px;
+  }
+  .main__image {
+    height: 30rem;
+    width: 35rem;
+  }
+}
+
+@media (max-width: 1390px) {
+  .main__image {
+    height: 28rem;
+    width: 32rem;
+  }
+}
+
+@media (max-width: 1220px) {
+  .main__text {
+    padding-bottom: 30px;
+  }
+  .main__image {
+    height: 32rem;
+    width: 32rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 100px 100px 100px;
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .main__text {
+    padding: 50px 70px 50px 70px;
+  }
+  .main__image {
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 50px 80px 50px;
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .main__text {
+    padding: 50px 70px 50px 70px;
+  }
+  .main__image {
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 30px 80px 30px;
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .main__text {
+    padding: 50px 70px 50px 70px;
+  }
+  .main__image {
+    width: 100%;
+    position: relative;
+  }
 }
