@@ -203,6 +203,14 @@ h3 {
     );
   }
 
+  .lista-menu__item:hover {
+    background: radial-gradient(
+      circle at 18.7% 37.8%,
+      rgb(219, 198, 198) 0%,
+      rgb(170, 184, 190) 90%
+    );
+  }
+
   .lista-menu__link {
     color: #000000;
     font-family: "Monteserrat", sans-serif;
