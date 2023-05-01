@@ -13,13 +13,18 @@ body {
 }
 
 .header {
-  padding: 2% 0 0 30%;
+  padding: 3em;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .header__menu {
   display: flex;
   align-items: self-end;
   gap: 80px;
+  justify-content: center;
 }
 
 .header__menu__links {
@@ -41,7 +46,7 @@ body {
   width: 3%;
 }
 
-.main {
+.main__section {
   display: flex;
   margin: 160px 300px;
   align-items: flex-start;
@@ -68,7 +73,7 @@ body {
   padding: 100px;
 }
 
-div {
+.main__images {
   display: flex;
   flex-direction: column;
   padding: 3% 3% 3% 0;
@@ -93,10 +98,13 @@ div {
 .footer {
   padding: 30px;
   margin: 3% 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .footer__images__logo {
-  width: 2%;
+  width: 4%;
 }
 
 h3 {
@@ -104,81 +112,176 @@ h3 {
   justify-content: end;
   font-size: 18px;
   font-weight: 200;
+  width: 100%;
 }
 
-@media (max-width: 1400px) {
-  .main {
-    margin: 50px 100px 50px 100px;
-    box-sizing: border-box;
+@media screen and (max-width: 1610px) {
+  .main__section {
+    margin: 120px 180px;
   }
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1270px) {
+  .main__section {
+    margin: 110px 100px;
+  }
+
   .main__text {
-    padding: 60px 100px 40px 60px;
+    padding: 40px 60px;
+    margin: 0;
+  }
+
+  .main__text__title {
+    font-size: 26px;
+  }
+
+  .main__text__paragraph {
+    font-size: 16px;
   }
 
   #first-image {
-    margin: 40px 20px;
-    width: auto;
-    height: 150px;
+    width: 200px;
+    position: relative;
+    margin: 10px 70px;
   }
+
   #second-image {
-    margin-top: -30px;
-    width: 170px;
-    height: 120px;
+    width: 34%;
+    position: relative;
+    margin: 0 0 0 100px;
   }
 }
 
-@media (max-width: 950px) {
-  #first-image {
-    margin: 50px 20px;
-    width: auto;
-    height: 140px;
-  }
-  #second-image {
-    margin-top: -30px;
-    width: 150px;
-    height: 100px;
-  }
-}
-
-@media (max-width: 890px) {
-  .main {
+@media screen and (max-width: 1110px) {
+  .main__section {
+    margin: 110px 110px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: flex-end;
-  }
-  .main__text {
-    padding: 0 60px 40px 60px;
   }
 
   #first-image {
-    margin: 30px 50px 0 0;
-    width: auto;
-    height: 140px;
+    width: 15rem;
+    margin: -30px 0 0 300px;
   }
+
   #second-image {
-    margin: 10px 50px 0 0;
-    width: 150px;
-    height: 100px;
+    width: 8rem;
+    margin: 0 0 0 300px;
   }
 }
 
-@media (max-width: 890px) {
-  .main__text {
-    padding: 10px 60px 40px 60px;
+@media screen and (max-width: 900px) {
+  .header__menu {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+  }
+
+  .menu__botao {
+    display: none;
+  }
+
+  .menu__botao:checked ~ .menu__rotulo > .menu__imagem {
+    background-image: url("../assets/cardapio1.png\ Aberto.png");
+  }
+
+  .menu__imagem img {
+    width: 8%;
+  }
+
+  .lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+  }
+
+  .menu__botao:checked ~ .lista-menu {
+    display: block;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .lista-menu__item {
+    padding: 1em;
+    color: #000000;
+    text-decoration: none;
+    background-color: white;
+    width: 60%;
+    border-bottom: 1px solid lightblue;
+  }
+
+  .lista-menu__link {
+    color: #000000;
+    font-family: "Monteserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .icon-home img {
+    width: 12%;
+    margin: 0 90%;
+  }
+
+  .main__section {
+    margin: 40px 40px;
+    padding: 0;
+  }
+
+  .main__text__title {
+    font-size: 18px;
+  }
+
+  .main__text__paragraph {
+    font-size: 12px;
   }
 
   #first-image {
-    margin: 30px 50px 0 0;
-    width: auto;
-    height: 100px;
+    width: 14rem;
+    margin: auto;
   }
+
   #second-image {
-    margin: 10px 50px 0 0;
-    width: 100px;
-    height: 70px;
+    width: 8rem;
+    margin: auto;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+
+  .footer__images__logo {
+    width: 8%;
+  }
+
+  h3 {
+    width: 300%;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #first-image {
+    width: 8rem;
+    margin: auto;
+  }
+
+  #second-image {
+    width: 4rem;
+    margin: auto;
   }
 }

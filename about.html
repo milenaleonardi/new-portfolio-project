@@ -9,6 +9,36 @@
   </head>
   <body>
     <header class="header">
+      <nav class="mobile-nav">
+        <div class="header__menu__icons">
+          <input type="checkbox" id="menu" class="menu__botao" />
+          <label for="menu" class="menu__rotulo">
+            <span class="menu__imagem">
+              <img src="./assets/cardapio1.png" alt="" />
+            </span>
+          </label>
+          <ul class="lista-menu">
+            <li class="lista-menu__item">
+              <a class="lista-menu__link" href="./index.html">Home</a>
+            </li>
+            <li class="lista-menu__item">
+              <a class="lista-menu__link" href="./about.html">Sobre mim</a>
+            </li>
+            <li class="lista-menu__item">
+              <a class="lista-menu__link" href="./projects.html"
+                >Meus projetos</a
+              >
+            </li>
+            <li class="lista-menu__item">
+              <a class="lista-menu__link" href="./contact.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+        <a class="icon-home" href="index.html"
+          ><img src="./assets/pagina-inicial.png" alt="Logo página inicial"
+        /></a>
+      </nav>
+
       <nav class="header__menu">
         <a class="header__menu__links" href="index.html">Home</a>
         <a class="header__menu__links" href="about.html">Sobre mim</a>
@@ -22,35 +52,38 @@
       </nav>
     </header>
     <main class="main">
-      <section class="main__text">
-        <h1 class="main__text__title">Sobre mim</h1>
-        <p class="main__text__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nulla
-          explicabo facilis perferendis dicta nemo veritatis maiores magni eius
-          natus. Autem sit voluptates sequi ad fugit deleniti error! Quia, est.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nulla
-          explicabo facilis perferendis dicta nemo veritatis maiores magni eius
-          natus. Autem sit voluptates sequi ad fugit deleniti error! Quia, est.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nulla
-          explicabo facilis perferendis dicta nemo veritatis maiores magni eius
-          natus. Autem sit voluptates sequi ad fugit deleniti error! Quia, est.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nulla
-          explicabo facilis perferendis dicta nemo veritatis maiores magni eius
-          natus. Autem sit voluptates sequi ad fugit deleniti error! Quia, est.
-        </p>
+      <section class="main__section">
+        <div class="main__text">
+          <h1 class="main__text__title">Sobre mim</h1>
+          <p class="main__text__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nulla
+            explicabo facilis perferendis dicta nemo veritatis maiores magni
+            eius natus. Autem sit voluptates sequi ad fugit deleniti error!
+            Quia, est. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ipsum nulla explicabo facilis perferendis dicta nemo veritatis
+            maiores magni eius natus. Autem sit voluptates sequi ad fugit
+            deleniti error! Quia, est. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ipsum nulla explicabo facilis perferendis dicta
+            nemo veritatis maiores magni eius natus. Autem sit voluptates sequi
+            ad fugit deleniti error! Quia, est. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ipsum nulla explicabo facilis
+            perferendis dicta nemo veritatis maiores magni eius natus. Autem sit
+            voluptates sequi ad fugit deleniti error! Quia, est.
+          </p>
+        </div>
+        <div class="main__images">
+          <img
+            id="first-image"
+            src="./assets/graduation.png"
+            alt="Desktop rodeado e livros e outros objetos"
+          />
+          <img
+            id="second-image"
+            src="./assets/school-icon.png"
+            alt="Desktop rodeado e livros e outros objetos"
+          />
+        </div>
       </section>
-      <div>
-        <img
-          id="first-image"
-          src="./assets/graduation.png"
-          alt="Desktop rodeado e livros e outros objetos"
-        />
-        <img
-          id="second-image"
-          src="./assets/school-icon.png"
-          alt="Desktop rodeado e livros e outros objetos"
-        />
-      </div>
     </main>
     <footer class="footer">
       <section class="footer__images">
