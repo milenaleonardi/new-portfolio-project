@@ -42,7 +42,7 @@ body {
 
 .main {
   display: flex;
-  margin: 100px 200px;
+  margin: 160px 300px;
   align-items: flex-start;
   justify-content: space-between;
   box-shadow: 5px 5px 10px grey;
@@ -122,9 +122,6 @@ h3 {
 }
 
 @media (max-width: 1375px) {
-  .main__text {
-    padding: 80px 50px 0 50px;
-  }
   .main__image {
     height: 30rem;
     width: 35rem;
@@ -180,14 +177,6 @@ h3 {
     justify-content: space-between;
     position: relative;
   }
-
-  .main__text {
-    padding: 50px 70px 50px 70px;
-  }
-  .main__image {
-    width: 100%;
-    position: relative;
-  }
 }
 
 @media (max-width: 500px) {
@@ -204,9 +193,5 @@ h3 {
 
   .main__text {
     padding: 50px 70px 50px 70px;
-  }
-  .main__image {
-    width: 100%;
-    position: relative;
   }
 }

@@ -13,13 +13,18 @@ body {
 }
 
 .header {
-  padding: 2% 0 0 30%;
+  padding: 3rem;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .header__menu {
   display: flex;
   align-items: self-end;
   gap: 80px;
+  justify-content: center;
 }
 
 .header__menu__links {
@@ -42,35 +47,30 @@ body {
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 100px 200px;
+  margin: 100px 100px 300px 150px;
 }
 
 .main__title {
   font-family: "Krona One", sans-serif;
   font-size: 28px;
-  padding: 0 0 160px 0;
 }
 
 .main__section__primaria {
-  box-shadow: 5px 5px 10px grey;
-  border-radius: 12px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px grey;
+  border-radius: 12px;
   font-family: "Montserrat", sans-serif;
-  width: 80%;
-  height: 350px;
-  margin: 0 0px 0 400px;
+  width: 85%;
+  margin: 180px 0 0 300px;
 }
 
 .main__div {
-  padding: 60px 80px 80px 80px;
+  padding: 3em;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  text-align: justify;
 }
 
 .main__section__title {
@@ -79,6 +79,12 @@ body {
 
 .main__section__text {
   font-size: 16px;
+  text-align: justify;
+}
+
+.project-image {
+  width: 40%;
+  border-radius: 10px;
 }
 
 .link__button {
@@ -90,8 +96,8 @@ body {
 #primeiro-botao,
 #segundo-botao {
   color: white;
-  border: 2px solid #167bf7;
-  background-color: #167bf7;
+  border: 2px solid rgb(85, 169, 197);
+  background-color: rgb(85, 169, 197);
   border-radius: 8px;
   padding: 10px;
   font-weight: 200;
@@ -102,10 +108,13 @@ body {
 .footer {
   padding: 30px;
   margin: 3% 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .footer__images__logo {
-  width: 2%;
+  width: 4%;
 }
 
 h3 {
@@ -113,4 +122,324 @@ h3 {
   justify-content: end;
   font-size: 18px;
   font-weight: 200;
+  width: 100%;
+}
+
+@media screen and (max-width: 1550px) {
+  .header__menu {
+    width: 100%;
+  }
+  .main {
+    margin: 90px 70px;
+  }
+
+  .main__section__primaria {
+    width: 80%;
+    margin: 150px 0 0 150px;
+  }
+
+  .project-image {
+    width: 50%;
+  }
+
+  #primeiro-botao,
+  #segundo-botao {
+    text-align: center;
+  }
+
+  .footer {
+    margin: 3% 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .main {
+    margin: 50px 200px 200px 50px;
+  }
+
+  .main__title {
+    font-size: 24px;
+  }
+
+  .main__section__primaria {
+    width: 100%;
+    margin: 180px 50px 0 90px;
+  }
+
+  .main__div {
+    padding: 2em;
+  }
+
+  .main__section__title {
+    font-size: 20px;
+  }
+
+  .main__section__text {
+    font-size: 10px;
+    text-align: justify;
+  }
+
+  .project-image {
+    width: 60%;
+    border-radius: 10px;
+  }
+
+  #primeiro-botao,
+  #segundo-botao {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    padding: 2.5rem 2rem;
+  }
+
+  .header__menu {
+    gap: 40px;
+  }
+
+  .main {
+    margin: 80px 100px 150px 100px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main__title {
+    font-size: 20px;
+  }
+
+  .main__section__primaria {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 120px;
+  }
+
+  .main__div {
+    padding: 2em;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+  .link__button {
+    display: flex;
+    justify-content: center;
+  }
+
+  #primeiro-botao,
+  #segundo-botao {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .footer__images__logo {
+    width: 15%;
+  }
+
+  h3 {
+    padding-left: 10rem;
+    padding-right: 1rem;
+    width: 400%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__menu {
+    width: 100%;
+  }
+  .main {
+    margin: 90px 70px;
+  }
+
+  .main__section__primaria {
+    width: 80%;
+    margin: 150px 0 0 150px;
+  }
+
+  .project-image {
+    width: 50%;
+  }
+
+  #primeiro-botao,
+  #segundo-botao {
+    text-align: center;
+  }
+
+  .footer {
+    margin: 3% 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .main {
+    margin: 50px 200px 200px 50px;
+  }
+
+  .main__title {
+    font-size: 24px;
+  }
+
+  .main__section__primaria {
+    width: 100%;
+    margin: 180px 50px 0 90px;
+  }
+
+  .main__div {
+    padding: 2em;
+  }
+
+  .main__section__title {
+    font-size: 20px;
+  }
+
+  .main__section__text {
+    font-size: 10px;
+    text-align: justify;
+  }
+
+  .project-image {
+    width: 60%;
+    border-radius: 10px;
+  }
+
+  #primeiro-botao,
+  #segundo-botao {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header__menu {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .menu__botao {
+    display: none;
+  }
+
+  .menu__botao:checked ~ .menu__rotulo > .menu__imagem {
+    background-image: url("../assets/cardapio1.png\ Aberto.png");
+  }
+
+  .menu__imagem img {
+    width: 6%;
+  }
+
+  .lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+  }
+
+  .menu__botao:checked ~ .lista-menu {
+    display: block;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .lista-menu__item {
+    padding: 1em;
+    color: #000000;
+    text-decoration: none;
+    background-color: white;
+    width: 30%;
+    border-bottom: 1px solid lightblue;
+  }
+
+  .lista-menu__link {
+    color: #000000;
+    font-family: "Monteserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .icon-home img {
+    width: 7%;
+    margin: 0 90%;
+  }
+
+  .main {
+    margin: 0px 100px 150px 100px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 70px 100px 30px;
+  }
+
+  .main__title {
+    font-size: 20px;
+  }
+
+  .main__section__primaria {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 120px;
+  }
+
+  .main__div {
+    padding: 2em;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+  .link__button {
+    display: flex;
+    justify-content: center;
+  }
+
+  #primeiro-botao,
+  #segundo-botao {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .footer__images__logo {
+    width: 15%;
+  }
+
+  h3 {
+    padding-left: 10rem;
+    padding-right: 1rem;
+    width: 400%;
+  }
 }

@@ -44,10 +44,10 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  margin: 160px 500px;
-  padding: 50px 140px 100px 140px;
+  margin: 180px 350px 280px 350px;
+  padding: 50px 120px 100px 120px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   box-shadow: 5px 5px 10px grey;
   border-radius: 12px;
   gap: 90px;
@@ -111,4 +111,97 @@ h3 {
   justify-content: end;
   font-size: 18px;
   font-weight: 200;
+}
+
+@media (max-width: 1530px) {
+  .main__section {
+    gap: 90px;
+  }
+  .icons-esquerda,
+  .icons-direita {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .main {
+    gap: 60px;
+  }
+  .main__section {
+    gap: 50px;
+  }
+
+  .telefone,
+  .email,
+  .localidade,
+  .linkedin,
+  .github,
+  .instagram {
+    font-size: 16px;
+  }
+
+  .contact-icon {
+    width: 28%;
+  }
+}
+
+@media (max-width: 1260px) {
+  .main {
+    gap: 40px;
+  }
+  .main__section {
+    gap: 50px;
+  }
+
+  .main__title {
+    font-size: 20px;
+  }
+
+  .main__text {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .telefone,
+  .email,
+  .localidade,
+  .linkedin,
+  .github,
+  .instagram {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .contact-icon {
+    width: 22px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .main {
+    position: relative;
+  }
+  .main__section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .icons-esquerda,
+  .icons-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .main__text {
+    position: absolute;
+    margin: 360px 0 50px 0;
+  }
 }
